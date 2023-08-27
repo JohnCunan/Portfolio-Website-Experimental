@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+.CertificationsPageContainer h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.CertificationsPageContainer p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.CertsContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    /* UNCOMMENT THE FLEX WRAP WHEN THERE ARE MORE THAN 7 CERTS */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.CertsContainer img {
+    max-width: 200px;
+    transition: transform 0.2s ease-in-out;
+    width: auto;
+    
+}
+
+.CertsContainer img:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .CertsContainer {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .CertificationsPageContainer h2 {
+        margin-top: 50px;
+        font-size: 2.7rem;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .CertificationsPageContainer p {
+        text-align: center;
+    }
+
+}

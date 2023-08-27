@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+:root {
+    --form-background-color: #2a2d49;
+    --textbox-background-color: #0b2541;
+}
+
+.ConnectSectionContainer {
+    padding-bottom: 40px;
+}
+
+.ConnectSectionContainer h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.MessageContainer {
+    background-color: var(--form-background-color);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.MessageContainer h3 {
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 5px;
+}
+
+.MessageContainer label {
+    font-family: 'Rubik', sans-serif;
+}
+
+.EmailForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 97%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    background-color: var(--textbox-background-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border: solid 1px #FFF;
+    font-family: "Courier New", monospace;
+}
+
+.EmailForm textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 97%;
+    height: 100px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: var(--textbox-background-color);
+    border: solid 1px #FFF;
+    border-radius: 5px;
+    resize: none;
+    font-family: "Courier New", monospace;
+}
+
+input[type="submit"] {
+    font-family: 'Rubik', sans-serif;
+    padding: 7px 15px;
+    font-size: 1rem;
+    background-color: #0b2541;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 3px #FFF;
+    margin: auto;
+}
+  
+input[type="submit"]:hover {
+    background-color: white;
+    border: solid 3px #0b2541;
+    color: #0b2541;
+    transition: ease-in-out 0.15s;
+}
+
+.LoadingContainer {
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.MessageModalBackground {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.MessageModalContainer {
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0b2541;
+    border-radius: 20px;
+    border: #FFF solid 2px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.MessageModalContainer h4 {
+    margin-top: 0;
+}
+
+.MessageModalContainer button {
+    color: #FFF;
+    background-color: #0b2541;
+    border-radius: 10px;
+    padding: 10px 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 470px) {
+
+    input[type="text"] {
+        
+    }
+
+}

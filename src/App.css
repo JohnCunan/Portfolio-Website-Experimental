@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+:root {
+    --background-color: #00042B;
+}
+
+.NavigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.NavigationBar ul {
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+.NavigationBar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    padding: 9px 20px;
+    border: var(--background-color) solid 1px;
+}
+
+.NavigationBar a:hover {
+    color: var(--background-color);
+    background-color: white;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.NavigationBar .Toggle {
+    margin: auto;
+}
+
+.NavMenu Button {
+    display: none;
+    color: #FFFF;
+}
+
+.NavMenu Button:hover {
+    background-color: #FFFF;
+    color: #00042B;
+}
+
+.MainFooterContainer p {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: #9ca1da;
+}
+
+
+
+.fade-enter {
+    opacity: 0;
+    
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    
+}
+
+.fade-exit {
+    opacity: 0;
+    position: absolute;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+@media only screen and (max-width: 550px) {
+
+    .NavigationBar {
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    .NavigationBar ul {
+        display: none;
+    }
+
+    .NavMenu Button {
+       display: block;
+    }
+
+}

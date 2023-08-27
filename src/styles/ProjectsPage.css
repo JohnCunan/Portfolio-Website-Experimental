@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+:root {
+    --background-color: #00042B;
+    --standby-color: #2a2d49;
+    --hovered-color: #ffffff66;
+    --link-standby-color: #ffffffaf;
+    --link-hovered-color: #ffffffe7;
+}  
+
+.ProjectsSectionContainer {
+    /* outline: orange 1px solid; */
+}
+
+.ProjectContainer .ImageLoadingIcon {
+    padding-top: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: var(--hovered-color);
+}
+
+.ProjectsSectionContainer .Title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+
+.ProjectsSectionContainer p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.ProjectContainer {
+    display: flex;
+    gap: 20px;
+    background-color: var(--standby-color);
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.ProjectContainer:hover {
+    background-color: var(--hovered-color);
+    transition: ease-in-out 0.2s;
+}
+
+.ProjectContainer img {
+    max-width: 270px;
+    border-radius: 5px;
+}
+
+.ProjectLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.MainProjectContent {
+    display: flex;
+    gap: 30px;
+}
+
+.ProjectDescription h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ProjectDescription p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.ProjectDescription h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ProjectLinks a {
+    margin: 5px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--link-standby-color);
+}
+
+.ProjectLinks a:hover {
+    background-color: var(--link-hovered-color);
+    transition: ease-in-out 0.2s;
+}
+
+.ProjectLinks img {
+    max-width: 25px;
+}
+
+.ViewMoreProjects {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--standby-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ViewMoreProjects:hover {
+    background-color: var(--hovered-color);
+    transition: ease-in-out 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .ProjectsSectionContainer .Title {
+        margin-top: 50px;
+        font-size: 2.7rem;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .ProjectsSectionContainer p {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .ProjectContainer img {
+        max-width: 75vw;
+    }
+
+    .ProjectLinks {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .ProjectLinks img {
+        max-width: 30px;
+    }
+
+    .ProjectDescription {
+        margin-top: 20px;
+    }
+
+    .ProjectDescription h3 {
+        margin: 5px;
+    }
+
+    .ProjectDescription h4 {
+        margin: 0px;
+    }
+
+    .MainProjectContent {
+        display: block;
+    }
+
+    .ProjectContainer .ImageLoadingIconHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 0px;
+    }    
+
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&family=Rubik:wght@300;400&display=swap');
+
+.MyInfoContainer {
+    padding-top: 30px;
+    display: flex;
+    /* gap: 150px; */
+    justify-content: space-between;
+}
+
+.MyInfoContainer h1 {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 2.7rem;
+    margin-bottom: 0;
+}
+
+.MyInfoContainer h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.MyInfoContainer p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.ProfilePhoto {
+    margin: 0px;
+    max-width: 75%;
+}
+
+.MyInfoContainer img {
+    border-radius: 1000px;
+    width: 175px;
+    height: 175px;
+    border: solid white 2px;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.PersonalInfo h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: #2a2d49;
+    display: inline-block;
+    margin: 0px;
+    padding: 7px 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.PersonalInfo h4:hover {
+    background-color: #ffffff66;
+    transition: ease-in-out 0.2s;
+}
+
+.PersonalInfo a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+}
+
+.PersonalInfo span {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+    .MyInfoContainer {
+        padding-top: 30px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .MyInfoContainer img {
+        margin-left: 0px;
+        min-width: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .MyInfoContainer img {
+        min-width: 150px;
+    }
+
+}
